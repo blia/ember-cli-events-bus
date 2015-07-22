@@ -13,12 +13,14 @@ Service known as `eventsBus` and `globalEvents`
 ## Usage
 
 my-component.js
-```
+```es6
   ...
   actions: {
     save() {
       ...
       this.globalEvents.trigger('foo:bar', data)
+      // eq
+      this.eventsBus.trigger('foo:bar', data)
       ...
     }
   }
@@ -26,11 +28,13 @@ my-component.js
 ```
 
 my-controller.js
-```
+```es6
   ...
   init() {
     ...
     this.globalEvents.on('foo:bar', this, 'bar')
+    // eq
+    this.eventsBus.on('foo:bar', this, 'bar')
     ...
   },
   bar(data) {
