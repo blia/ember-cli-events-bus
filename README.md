@@ -1,8 +1,40 @@
 # Events-bus
 
 Simple global events service.
-Adding Ember Evented Service to your routs, controllers and component as eventsBus or globalEvents
+
+Adds Ember Evented Service to your routs, controllers and components
+
+Service known as `eventsBus` and `globalEvents`
 
 ## Installation
 
 `ember install ember-cli-events-bus`
+
+## Usage
+
+my-component.js
+```
+  ...
+  actions: {
+    save() {
+      ...
+      this.globalEvents.trigger('foo:bar', data)
+      ...
+    }
+  }
+  ...
+```
+
+my-controller.js
+```
+  ...
+  init() {
+    ...
+    this.globalEvents.on('foo:bar', this, 'bar')
+    ...
+  },
+  bar(data) {
+    ...
+  }
+  ...
+```
