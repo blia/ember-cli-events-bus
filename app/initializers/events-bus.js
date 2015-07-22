@@ -1,1 +1,1 @@
-export { default, initialize } from 'events-bus/initializers/events-bus';
+export { default, initialize } from 'ember-cli-events-bus/initializers/events-bus';

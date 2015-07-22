@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'events-bus'
+  name: 'ember-cli-events-bus'
 };

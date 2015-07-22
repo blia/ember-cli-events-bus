@@ -1,1 +1,1 @@
-export { default } from 'events-bus/services/events-bus';
+export { default } from 'ember-cli-events-bus/services/events-bus';
