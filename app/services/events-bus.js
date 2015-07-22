@@ -1,0 +1,1 @@
+export { default } from 'events-bus/services/events-bus';

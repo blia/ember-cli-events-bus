@@ -1,7 +1,7 @@
 {
-  "name": "events-bus",
+  "name": "ember-cli-events-bus",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Simple global events service.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,7 +15,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Kirill Yakovenko <kirill.yakovenko@me.com>",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",
@@ -37,7 +37,9 @@
     "ember-try": "0.0.6"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "global-events",
+    "service"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.0.0"
