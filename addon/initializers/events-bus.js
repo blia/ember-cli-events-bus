@@ -1,4 +1,4 @@
-export function initialize(container, application) {
+export function initialize(application) {
   application.inject('route', 'eventsBus', 'service:events-bus');
   application.inject('route', 'globalEvents', 'service:events-bus');
   application.inject('component', 'eventsBus', 'service:events-bus');
